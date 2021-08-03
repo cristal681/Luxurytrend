@@ -30,7 +30,7 @@
   <link href="../assets/js/plugins/nucleo/css/nucleo.css" rel="stylesheet" />
   <link href="../assets/js/plugins/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" />
   <!-- CSS Files -->
-  <link href="../assets/css/only.css" rel="stylesheet" />
+  <link href="../assets/css/only_analysis-dashboard.css" rel="stylesheet" />
 </head>
 
 <body class="">
@@ -132,7 +132,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link  active" href="../examples/icons.html">
-              <i class="ni ni-planet text-purple"></i> ONLY 분석  
+              <i class="ni ni-chart-pie-35 text-purple"></i> ONLY 분석  
             </a>
           </li>
           <li class="nav-item">
@@ -205,7 +205,7 @@
     <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
       <div class="container-fluid">
         <!-- Brand -->
-        <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="../index.html">Icons</a>
+        <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="../index.html">ONLY 분석</a>
         <!-- Form -->
         <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto">
           <div class="form-group mb-0">
@@ -213,7 +213,7 @@
               <div class="input-group-prepend">
                 <span class="input-group-text"><i class="fas fa-search"></i></span>
               </div>
-              <input class="form-control" placeholder="Search" type="text">
+              <input class="form-control" placeholder="search" type="text">
             </div>
           </div>
         </form>
@@ -272,19 +272,26 @@
                 <div class="card-body">
                   <div class="row">
                     <div class="col">
-                      <h5 class="card-title text-uppercase text-muted mb-0">Traffic</h5>
-                      <span class="h2 font-weight-bold mb-0">350,897</span>
+                      <h5 class="card-title text-uppercase text-muted mb-0">2021.08.01 ~ 2021.08.31</h5>
+                      <span class="h2 font-weight-bold mb-0 text-purple"></span>
                     </div>
+                    
                     <div class="col-auto">
                       <div class="icon icon-shape bg-danger text-white rounded-circle shadow">
                         <i class="fas fa-chart-bar"></i>
                       </div>
                     </div>
                   </div>
-                  <p class="mt-3 mb-0 text-muted text-sm">
-                    <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span>
-                    <span class="text-nowrap">Since last month</span>
-                  </p>
+                  
+                    <p class="mt-3 mb-0 text-muted text-sm">
+                    
+                      
+                    <span class="text-nowrap">최근 가장 언급량 많은 플랫폼</span>
+
+                  
+                    </p>
+                  
+                
                 </div>
               </div>
             </div>
@@ -293,23 +300,24 @@
                 <div class="card-body">
                   <div class="row">
                     <div class="col">
-                      <h5 class="card-title text-uppercase text-muted mb-0">New users</h5>
-                      <span class="h2 font-weight-bold mb-0">2,356</span>
+                      <h5 class="card-title text-uppercase text-muted mb-0 align-center">2021.08.01 ~ 2021.08.31</h5>
+                      <span class="h2 font-weight-bold mb-0 text-purple">2021.08.02</span>
                     </div>
                     <div class="col-auto">
                       <div class="icon icon-shape bg-warning text-white rounded-circle shadow">
-                        <i class="fas fa-chart-pie"></i>
+                        <i class="ni ni-calendar-grid-58"></i>
                       </div>
                     </div>
                   </div>
                   <p class="mt-3 mb-0 text-muted text-sm">
-                    <span class="text-danger mr-2"><i class="fas fa-arrow-down"></i> 3.48%</span>
-                    <span class="text-nowrap">Since last week</span>
+                    
+                    <span class="text-nowrap">언급량이 가장많은 일자</span>
                   </p>
                 </div>
               </div>
             </div>
-            <div class="col-xl-3 col-lg-6">
+            
+            <!--<div class="col-xl-3 col-lg-6">
               <div class="card card-stats mb-4 mb-xl-0">
                 <div class="card-body">
                   <div class="row">
@@ -329,14 +337,14 @@
                   </p>
                 </div>
               </div>
-            </div>
+            </div>-->
             <div class="col-xl-3 col-lg-6">
               <div class="card card-stats mb-4 mb-xl-0">
                 <div class="card-body">
                   <div class="row">
                     <div class="col">
-                      <h5 class="card-title text-uppercase text-muted mb-0">Performance</h5>
-                      <span class="h2 font-weight-bold mb-0">49,65%</span>
+                      <h5 class="card-title text-uppercase text-muted mb-0">2021.08.01 ~ 2021.08.31</h5>
+                      <span class="h2 font-weight-mb-0 text-red"><i class="fas fa-arrow-up"></i>36.7%</span>
                     </div>
                     <div class="col-auto">
                       <div class="icon icon-shape bg-info text-white rounded-circle shadow">
@@ -345,8 +353,8 @@
                     </div>
                   </div>
                   <p class="mt-3 mb-0 text-muted text-sm">
-                    <span class="text-success mr-2"><i class="fas fa-arrow-up"></i> 12%</span>
-                    <span class="text-nowrap">Since last month</span>
+                    <span class="text-red mr-2"></span>
+                    <span class="text-nowrap">전월 대비 언급량 증감률</span>
                   </p>
                 </div>
               </div>
@@ -358,6 +366,7 @@
     <!-- Page content -->
     <div class="container-fluid mt--7">
       <!-- Table -->
+      
       <div class="row">
         <div class="col">
           <div class="card shadow">
