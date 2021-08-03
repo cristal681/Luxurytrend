@@ -1515,9 +1515,10 @@ pre code {
   .col-xl-8 {
     flex: 0 0 66.666667%;
     max-width: 66.666667%;
-    /* 요기가 비교차트 자리 */
+    /* 요기가 비교차트 자리
     height: 
     background-color:
+    */
   }
 
   .col-xl-9 {
@@ -4957,7 +4958,6 @@ input[type="button"].btn-block {
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: 0.375rem;
-  background-color:blue;
 
 }
 
@@ -15493,9 +15493,10 @@ a.btn-icon-only {
   }
 }
 
+/* 이게 정답이네여 얘가 비교브랜드순위+전체상품순위+중고브랜드순위 */
 .card-stats .card-body {
   padding: 1rem 1.5rem;
-  /* 이게 정답이네여 얘가 비교브랜드순위+전체상품순위+중고브랜드순위 */
+  height:250px;
 }
 
 /* 만약 개별로 height나 컬러따로주려면 */
