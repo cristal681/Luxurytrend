@@ -1,5 +1,0 @@
-# HTTrack Website Copier Cookie File
-# This file format is compatible with Netscape cookies
-some.co.kr	TRUE	/	FALSE	1999999999	SESSION	ZDdjMzY2ZjQtYWJiOC00NDM5LTg3MGUtZGU1YmIyMWFlMmU2
-some.co.kr	TRUE	/	FALSE	1999999999	SameSite	Lax
-
