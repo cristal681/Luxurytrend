@@ -4978,8 +4978,16 @@
   .card-body {
     flex: 1 1 auto;
     padding: 1.5rem;
+
   }
   
+  .card-body-total{
+    flex: 1 1 auto;
+    padding: 1.5rem;
+  }
+
+
+
   .card-title {
     margin-bottom: 1.25rem;
   }
