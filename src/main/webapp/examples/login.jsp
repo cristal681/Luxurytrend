@@ -1,4 +1,8 @@
-<!-- Î°úÍ∑∏Ïù∏ -->
+<%@page import="user.UserDAO"%>
+<%@page import="user.UserDTO"%>
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!-- ∑Œ±◊¿Œ -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -7,7 +11,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>
-Luxury Trend Î°úÍ∑∏Ïù∏
+Luxury Trend ∑Œ±◊¿Œ
 </title>
 <!-- Favicon -->
 <link href="../assets/img/brand/favicon.png" rel="icon" type="image/png">
@@ -26,7 +30,7 @@ Luxury Trend Î°úÍ∑∏Ïù∏
 <nav class="navbar navbar-top navbar-horizontal navbar-expand-md navbar-dark">
     <div class="container px-4">
     <a class="navbar-brand" href="../index.html">
-        <!-- Îü≠ÏÖîÎ¶¨ Ìä∏Î†åÎìú Î°úÍ≥† Ìà¨Î™Ö png ÌïÑÏöîÌï®
+        <!-- ∑∞º≈∏Æ ∆Æ∑ªµÂ ∑Œ∞Ì ≈ı∏Ì png « ø‰«‘
         <img src="../assets/img/brand/white.png" /> -->
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse-main" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,27 +57,27 @@ Luxury Trend Î°úÍ∑∏Ïù∏
         <ul class="navbar-nav ml-auto">
         <li class="nav-item">
             <a class="nav-link nav-link-icon" href="../index.html">
-            <span class="nav-link-inner--text">Î∂ÑÏÑù ÏÇ¨Ïù¥Ìä∏</span>
+            <span class="nav-link-inner--text">∫–ºÆ ªÁ¿Ã∆Æ</span>
             </a>
         </li>
         <li class="nav-item">
             <a class="nav-link nav-link-icon" href="../examples/tables.html">
-            <span class="nav-link-inner--text">Í≤åÏãúÌåê</span>
+            <span class="nav-link-inner--text">∞‘Ω√∆«</span>
             </a>
         </li>
         <li class="nav-item">
             <a class="nav-link nav-link-icon" href="../examples/question.html">
-            <span class="nav-link-inner--text">Î¨∏ÏùòÏÇ¨Ìï≠</span>
+            <span class="nav-link-inner--text">πÆ¿«ªÁ«◊</span>
             </a>
         </li>
         <li class="nav-item">
             <a class="nav-link nav-link-icon" href="../examples/register.html">
-            <span class="nav-link-inner--text">ÌöåÏõêÍ∞ÄÏûÖ</span>
+            <span class="nav-link-inner--text">»∏ø¯∞°¿‘</span>
             </a>
         </li>
         <li class="nav-item">
             <a class="nav-link nav-link-icon" href="../examples/login.html">
-            <span class="nav-link-inner--text">Î°úÍ∑∏Ïù∏</span>
+            <span class="nav-link-inner--text">∑Œ±◊¿Œ</span>
             </a>
         </li>
         </ul>
@@ -86,7 +90,7 @@ Luxury Trend Î°úÍ∑∏Ïù∏
     <div class="header-body text-center mb-1">
         <div class="row justify-content-center">
         <div class="col-lg-5 col-md-6">
-            <!-- Î°úÍ∑∏Ïù∏ ÎÇ¥Ïö© ÏûÖÎ†•ÌïòÍ∏∞ -->
+            <!-- ∑Œ±◊¿Œ ≥ªøÎ ¿‘∑¬«œ±‚ -->
             <!--<p class="text-lead text-light"></p>-->
         </div>
         </div>
@@ -104,14 +108,14 @@ Luxury Trend Î°úÍ∑∏Ïù∏
     <div class="row justify-content-center">
     <div class="col-lg-6 col-md-8">
         
-        <h1 class="text-white text-center">Î°úÍ∑∏Ïù∏</h1>
+        <h1 class="text-white text-center">∑Œ±◊¿Œ</h1>
         <div class="card bg-secondary shadow border-0">
         <div class="card-header bg-transparent pb-5">
             <div class="card-body px-lg-5 py-lg-5">
             <div class="text-center text-muted mb-4">
                 <small></small>
             </div>
-            <!-- Î°úÍ∑∏Ïù∏ Ìèº-->
+            <!-- ∑Œ±◊¿Œ ∆˚-->
             <form action="/LuxuryProatice2/LoginCon" method="post" role="form">
             <div class="form-group">
                 <div class="input-group input-group-alternative mb-3">
@@ -121,7 +125,7 @@ Luxury Trend Î°úÍ∑∏Ïù∏
                 <div class="input-group-prepend">
                     <span class="input-group-text"><i class="ni ni-email-83"></i></span>
                 </div>
-                <input class="form-control" placeholder="Ïù¥Î©îÏùº" name="email" type="email">
+                <input class="form-control" placeholder="¿Ã∏ﬁ¿œ" name="email" type="email">
                 </div>
             </div>
             <div class="form-group">
@@ -129,16 +133,16 @@ Luxury Trend Î°úÍ∑∏Ïù∏
                 <div class="input-group-prepend">
                     <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
                 </div>
-                <input class="form-control" placeholder="Ìå®Ïä§ÏõåÎìú" name="pw" type="password">
+                <input class="form-control" placeholder="∆–Ω∫øˆµÂ" name="pw" type="password">
                 </div>
             </div>
             </div>
             <div class="text-center">
-                <button type="button" class="btn btn-primary mt-1">Î°úÍ∑∏Ïù∏</button>
+                <button type="button" class="btn btn-primary mt-1">∑Œ±◊¿Œ</button>
             </div>
             </form>
         </div>
-        <!-- ÏÜåÏÖú Î°úÍ∑∏Ïù∏ -->
+        <!-- º“º» ∑Œ±◊¿Œ -->
         <!--
         <div class="card-body px-lg-5 py-lg-5">
             <div class="text-center text-muted mb-4">
@@ -174,7 +178,7 @@ Luxury Trend Î°úÍ∑∏Ïù∏
         <div class="copyright text-center text-xl-center text-muted">
         @copyright
         <!-- &copy; 2021 -->
-        <a class="font-weight-bold ml-3 text-orange" target="_blank">(Ï£º)Ìô©</a>
+        <a class="font-weight-bold ml-3 text-orange" target="_blank">(¡÷)»≤</a>
         </div>
     </div>
     <!--
