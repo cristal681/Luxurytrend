@@ -25,10 +25,10 @@ public class LoginCon extends HttpServlet {
 	         if(user != null) {
 	        	 HttpSession session = request.getSession();
 	        	 session.setAttribute("login", user);
-	        	 response.sendRedirect("main.jsp");
+	        	 response.sendRedirect("index.jsp");
 	         }else {
 	        	 System.out.println("로그인실패..");
-	            response.sendRedirect("login.jsp");
+	            response.sendRedirect("/LuxuryPratice2/examples/login.jsp");
 	         }
 	         
 

@@ -3,7 +3,12 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <!-- 로그인 -->
+<% 
+	UserDTO user = (UserDTO)session.getAttribute("login"); 
+	
+	
 
+%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -29,7 +34,7 @@ Luxury Trend 로그인
 <!-- Navbar -->
 <nav class="navbar navbar-top navbar-horizontal navbar-expand-md navbar-dark">
     <div class="container px-4">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../index.jsp">
         <!-- 럭셔리 트렌드 로고 투명 png 필요함
         <img src="../assets/img/brand/white.png" /> -->
     </a>
@@ -41,7 +46,7 @@ Luxury Trend 로그인
         <div class="navbar-collapse-header d-md-none">
         <div class="row">
             <div class="col-6 collapse-brand">
-            <a href="../index.html">
+            <a href="../index.jsp">
                 <img src="../assets/img/brand/blue.png">
             </a>
             </div>
@@ -56,27 +61,27 @@ Luxury Trend 로그인
         <!-- Navbar items -->
         <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-            <a class="nav-link nav-link-icon" href="../index.html">
+            <a class="nav-link nav-link-icon" href="../index.jsp">
             <span class="nav-link-inner--text">분석 사이트</span>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link nav-link-icon" href="../examples/tables.html">
+            <a class="nav-link nav-link-icon" href="../examples/tables.jsp">
             <span class="nav-link-inner--text">게시판</span>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link nav-link-icon" href="../examples/question.html">
+            <a class="nav-link nav-link-icon" href="../examples/question.jsp">
             <span class="nav-link-inner--text">문의사항</span>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link nav-link-icon" href="../examples/register.html">
+            <a class="nav-link nav-link-icon" href="../examples/register.jsp">
             <span class="nav-link-inner--text">회원가입</span>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link nav-link-icon" href="../examples/login.html">
+            <a class="nav-link nav-link-icon" href="../examples/login.jsp">
             <span class="nav-link-inner--text">로그인</span>
             </a>
         </li>
@@ -116,7 +121,7 @@ Luxury Trend 로그인
                 <small></small>
             </div>
             <!-- 로그인 폼-->
-            <form action="/LuxuryProatice2/LoginCon" method="post" role="form">
+            <form action="/LuxuryPratice2/LoginCon" method="post" role="form">
             <div class="form-group">
                 <div class="input-group input-group-alternative mb-3">
             </div>
@@ -138,7 +143,7 @@ Luxury Trend 로그인
             </div>
             </div>
             <div class="text-center">
-                <button type="button" class="btn btn-primary mt-1">로그인</button>
+                <button type="submit" class="btn btn-primary mt-1">로그인</button>
             </div>
             </form>
         </div>

@@ -9,7 +9,7 @@
 <body>
 	<%
 		session.invalidate();
-	response.sendRedirect("main.jsp");
+	response.sendRedirect("/LuxuryPratice2/index.jsp");
 	
 	%>
 </body>

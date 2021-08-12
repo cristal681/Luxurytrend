@@ -1,23 +1,13 @@
-<!--
-
-=========================================================
-* Argon Dashboard - v1.1.2
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/argon-dashboard
-* Copyright 2020 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/argon-dashboard/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
+<%@page import="user.UserDAO"%>
+<%@page import="user.UserDTO"%>
+<%@page import="java.util.ArrayList"%>
+<%@ page language="java" contentType="text/html; charset=EUC-KR" pageEncoding="UTF-8"%>
+<!--  세션에 저장된 정보를 접근 -->
+<% UserDTO user = (UserDTO)session.getAttribute("login");%>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8" />
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>
     Luxury Trend Dashboard - made by (주)황
@@ -126,17 +116,17 @@
         <!-- 메뉴내용 -->
         <ul class="navbar-nav">
           <li class="nav-item  active ">
-            <a class="nav-link  active " href="./index.html">
+            <a class="nav-link  active " href="./index.jsp">
               <i class="ni ni-tv-2 text-purple"></i> 스마트 분석
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="./examples/only.html">
+            <a class="nav-link " href="./examples/only.jsp">
               <i class="ni ni-chart-pie-35 text-purple"></i> 상품 분석
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link " href="./examples/site_analysis.html">
+            <a class="nav-link " href="./examples/site_analysis.jsp">
               <i class="ni ni-diamond text-purple"></i> 사이트 분석
             </a>
           </li>
@@ -147,25 +137,34 @@
             </a>
           </li>-->
           <li class="nav-item">
-            <a class="nav-link " href="./examples/profile.html">
+            <a class="nav-link " href="./examples/profile.jsp">
               <i class="ni ni-single-02 text-yellow"></i> 프로필
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="./examples/tables.html">
+            <a class="nav-link " href="./examples/tables.jsp">
               <i class="ni ni-bullet-list-67 text-red"></i> 게시판
             </a>
           </li>
+          <nav>
+          <%if(user != null) {%>
           <li class="nav-item">
-            <a class="nav-link" href="./examples/login.html">
+            <a class="nav-link" href="./examples/logout.jsp">
+              <i class="ni ni-key-25 text-dark"></i> 로그아웃
+            </a>          
+          <%}else{ %>
+          <li class="nav-item">
+            <a class="nav-link" href="./examples/login.jsp">
               <i class="ni ni-key-25 text-info"></i> 로그인
             </a>
-          </li>
+          </li>   
           <li class="nav-item">
-            <a class="nav-link" href="./examples/register.html">
+            <a class="nav-link" href="./examples/register.jsp">
               <i class="ni ni-circle-08 text-pink"></i> 회원가입
             </a>
           </li>
+          <%} %>
+          </nav>
         </ul>
 
         
@@ -177,7 +176,7 @@
     <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
       <div class="container-fluid">
         <!-- Brand -->
-        <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="./index.html">Brand DashBoard</a>
+        <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="./index.jsp">Brand DashBoard</a>
         <!-- Form -->
         <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto">
           <div class="form-group mb-0">
@@ -206,24 +205,24 @@
               <div class=" dropdown-header noti-title">
                 <h6 class="text-overflow m-0">Welcome!</h6>
               </div>
-              <a href="./examples/profile.html" class="dropdown-item">
+              <a href="./examples/profile.jsp" class="dropdown-item">
                 <i class="ni ni-single-02"></i>
                 <span>My profile</span>
               </a>
-              <a href="./examples/profile.html" class="dropdown-item">
+              <a href="./examples/profile.jsp" class="dropdown-item">
                 <i class="ni ni-settings-gear-65"></i>
                 <span>Settings</span>
               </a>
-              <a href="./examples/profile.html" class="dropdown-item">
+              <a href="./examples/profile.jsp" class="dropdown-item">
                 <i class="ni ni-calendar-grid-58"></i>
                 <span>Activity</span>
               </a>
-              <a href="./examples/profile.html" class="dropdown-item">
+              <a href="./examples/profile.jsp" class="dropdown-item">
                 <i class="ni ni-support-16"></i>
                 <span>Support</span>
               </a>
               <div class="dropdown-divider"></div>
-              <a href="#!" class="dropdown-item">
+              <a href="./examples/logout.jsp" class="dropdown-item">
                 <i class="ni ni-user-run"></i>
                 <span>Logout</span>
               </a>
