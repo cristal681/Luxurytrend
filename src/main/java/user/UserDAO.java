@@ -6,10 +6,13 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import user.UserDTO;
+
 public class UserDAO {
 	private Connection conn = null;
 	private PreparedStatement psmt = null;
 	private ResultSet rs = null;
+	private int cnt;
 	
 	
 	//�����ͺ��̽� �������, ������
@@ -66,12 +69,12 @@ public class UserDAO {
 	        psmt.setString(2, pw);
 	        
 	        rs = psmt.executeQuery();
-	      //rs.next() : �Ʒ� ������ �̵��Ͽ� ������ ���� ���� �Ǵ�(true/false)
+	      //rs.next() : 
 	        if(rs.next()) {
 	        	String getName = rs.getString(1);
 	        	
 	        	
-	        	//ȸ�� ������ ������ ��  �ִ� ��ü ����
+	        	//
 	        	User = new UserDTO(email, getName, null);
 	        	
 	        }else {
@@ -84,8 +87,61 @@ public class UserDAO {
 		}//end finally
 		return User;
 	} // end users_login()
+	
+	public int user_join(UserDTO user) {
+		try {
+	        connection();
+			
+	         // 3. 
+	         String sql = "insert into users values(?,?,?)";
+	         
+	         psmt = conn.prepareStatement(sql);
+	         psmt.setString(1, user.getName());
+	         psmt.setString(2, user.getEmail());
+	         psmt.setString(3, user.getPw());
+	         
+	         
+	         cnt = psmt.executeUpdate();
+	        
+	      
+	      } catch (SQLException e) {
+	         e.printStackTrace();
+	      } finally {
+	         close();
+	      }//end finally
 		
+		return cnt;
+	}//end member_join()
+
+	public int user_update(UserDTO update_user) {
 		
+		try {
+	         connection();
+	         
+	         // 3. 
+	         String sql = "update web_member set pw=?, name=? where email=?";
+	         
+	         psmt = conn.prepareStatement(sql);
+	         psmt.setString(1, update_user.getEmail());
+	         psmt.setString(2, update_user.getName());
+	         psmt.setString(3, update_user.getPw());
+	         
+	         // rs = email,pw,tel,addr
+	         
+	         cnt = psmt.executeUpdate();
+	       
+	         
+
+	      
+	      } catch (SQLException e) {
+	         e.printStackTrace();
+	      } finally {
+	         //
+	      
+	        	close();
+	      }//end finally
+		return cnt;
+}
 }
 
 
