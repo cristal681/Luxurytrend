@@ -130,7 +130,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link " href="../examples/tables.jsp">
-              <i class="ni ni-bullet-list-67 text-red"></i> 게시판
+              <i class="ni ni-bullet-list-67 text-purple"></i> 게시판
             </a>
           </li>
         </ul>
