@@ -128,15 +128,9 @@
               <i class="ni ni-diamond text-purple"></i> 사이트 분석
             </a>
           </li>
-          <!---
-          <li class="nav-item">
-            <a class="nav-link " href="./examples/maps.jsp">
-              <i class="ni ni-pin-3 text-orange"></i> Maps
-            </a>
-          </li>-->
           <li class="nav-item">
             <a class="nav-link " href="../examples/tables.jsp">
-              <i class="ni ni-bullet-list-67 text-red"></i> 게시판
+              <i class="ni ni-bullet-list-67 text-purple"></i> 게시판
             </a>
           </li>
         </ul>
