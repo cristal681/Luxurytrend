@@ -30,7 +30,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <!-- Brand -->
-      <a class="navbar-brand pt-0" href="../index.html">
+      <a class="navbar-brand pt-0" href="../index.jsp">
         <img src="../assets/img/brand/luxurysdf.png" class="navbar-brand-img" alt="...">
       </a>
       <!-- User -->
@@ -58,19 +58,19 @@
             <div class=" dropdown-header noti-title">
               <h6 class="text-overflow m-0">Welcome!</h6>
             </div>
-            <a href="../examples/profile.html" class="dropdown-item">
+            <a href="../examples/profile.jsp" class="dropdown-item">
               <i class="ni ni-single-02"></i>
               <span>My profile</span>
             </a>
-            <a href="../examples/profile.html" class="dropdown-item">
+            <a href="../examples/profile.jsp" class="dropdown-item">
               <i class="ni ni-settings-gear-65"></i>
               <span>Settings</span>
             </a>
-            <a href="../examples/profile.html" class="dropdown-item">
+            <a href="../examples/profile.jsp" class="dropdown-item">
               <i class="ni ni-calendar-grid-58"></i>
               <span>Activity</span>
             </a>
-            <a href="../examples/profile.html" class="dropdown-item">
+            <a href="../examples/profile.jsp" class="dropdown-item">
               <i class="ni ni-support-16"></i>
               <span>Support</span>
             </a>
@@ -88,7 +88,7 @@
         <div class="navbar-collapse-header d-md-none">
           <div class="row">
             <div class="col-6 collapse-brand">
-              <a href="../index.html">
+              <a href="../index.jsp">
                 <img src="../assets/img/brand/blue.png">
               </a>
             </div>
@@ -114,36 +114,32 @@
         <!-- 메뉴내용 -->
         <ul class="navbar-nav">
           <li class="nav-item  ">
-            <a class="nav-link " href="../index.html">
+            <a class="nav-link " href="../index.jsp">
               <i class="ni ni-tv-2 text-purple"></i> 스마트 분석
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="../examples/only.html">
+            <a class="nav-link " href="../examples/only.jsp">
               <i class="ni ni-chart-pie-35 text-purple"></i> 상품 분석
             </a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link active" href="../examples/site_analysis.html">
+            <a class="nav-link active" href="../examples/site_analysis.jsp">
               <i class="ni ni-diamond text-purple"></i> 사이트 분석
             </a>
           </li>
           <!---
           <li class="nav-item">
-            <a class="nav-link " href="./examples/maps.html">
+            <a class="nav-link " href="./examples/maps.jsp">
               <i class="ni ni-pin-3 text-orange"></i> Maps
             </a>
           </li>-->
           <li class="nav-item">
-            <a class="nav-link " href="../examples/tables.html">
+            <a class="nav-link " href="../examples/tables.jsp">
               <i class="ni ni-bullet-list-67 text-red"></i> 게시판
             </a>
           </li>
         </ul>
-<<<<<<< HEAD
-
-        
-=======
         <!-- Divider -->
         <hr class="my-3">
         <!-- Heading -->
@@ -151,22 +147,21 @@
         <!-- Navigation -->
         <ul class="navbar-nav mb-md-3">
           <li class="nav-item">
-            <a class="nav-link" href="../examples/login.html">
+            <a class="nav-link" href="../examples/login.jsp">
               <i class="ni ni-key-25 text-info"></i> 로그인
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../examples/register.html">
+            <a class="nav-link" href="../examples/register.jsp">
               <i class="ni ni-circle-08 text-pink"></i> 회원가입
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="../examples/profile.html">
+            <a class="nav-link " href="../examples/profile.jsp">
               <i class="ni ni-single-02 text-yellow"></i> 프로필
             </a>
           </li>
         </ul>
->>>>>>> beec186373e32dd48b1ac1c14450698f8d859669
       </div>
     </div>
   </nav>
@@ -175,7 +170,7 @@
     <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
       <div class="container-fluid">
         <!-- Brand -->
-        <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="../index.html">사이트 분석</a>
+        <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="../index.jsp">사이트 분석</a>
         <!-- Form -->
         <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto">
           <div class="form-group mb-0">
@@ -204,19 +199,19 @@
               <div class=" dropdown-header noti-title">
                 <h6 class="text-overflow m-0">Welcome!</h6>
               </div>
-              <a href="./examples/profile.html" class="dropdown-item">
+              <a href="./examples/profile.jsp" class="dropdown-item">
                 <i class="ni ni-single-02"></i>
                 <span>My profile</span>
               </a>
-              <a href="./examples/profile.html" class="dropdown-item">
+              <a href="./examples/profile.jsp" class="dropdown-item">
                 <i class="ni ni-settings-gear-65"></i>
                 <span>Settings</span>
               </a>
-              <a href="./examples/profile.html" class="dropdown-item">
+              <a href="./examples/profile.jsp" class="dropdown-item">
                 <i class="ni ni-calendar-grid-58"></i>
                 <span>Activity</span>
               </a>
-              <a href="./examples/profile.html" class="dropdown-item">
+              <a href="./examples/profile.jsp" class="dropdown-item">
                 <i class="ni ni-support-16"></i>
                 <span>Support</span>
               </a>
