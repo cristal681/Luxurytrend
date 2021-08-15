@@ -30,7 +30,7 @@
       </button>
       <!-- Brand -->
       <a class="navbar-brand pt-0" href="../index.html">
-        <img src="../assets/img/brand/luxurysdf.PNG" class="navbar-brand-img" alt="...">
+        <img src="../assets/img/brand/logo.png" class="navbar-brand-img" alt="...">
       </a>
       <!-- User -->
       <ul class="nav align-items-center d-md-none">
