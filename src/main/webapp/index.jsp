@@ -32,7 +32,7 @@
       </button>
       <!-- Brand -->
       <a class="navbar-brand pt-0" href="./index.jsp">
-        <img src="./assets/img/brand/luxurysdf.PNG" class="navbar-brand-img" alt="...">
+        <img src="./assets/img/brand/logo.png" class="navbar-brand-img" alt="...">
       </a>
       <!-- User -->
       <ul class="nav align-items-center d-md-none">
@@ -51,8 +51,7 @@
           <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <div class="media align-items-center">
               <span class="avatar avatar-sm rounded-circle">
-                <img alt="Image placeholder" src="https://t1.daumcdn.net/cfile/blog/99B7C0385ADDFED01A
-">
+                <img alt="Image placeholder" src="https://t1.daumcdn.net/cfile/blog/99B7C0385ADDFED01A">
               </span>
             </div>
           </a>
@@ -113,39 +112,35 @@
             </div>
           </div>
         </form>
-        <!-- 메뉴내용 -->
+         <!-- Navigation -->
         <ul class="navbar-nav">
-          <li class="nav-item  active ">
-            <a class="nav-link  active " href="./index.jsp">
-              <i class="ni ni-tv-2 text-purple"></i> 스마트 분석
+          <li class="nav-item">
+            <a class="nav-link active" href="#">
+              <i class="ni ni-tv-2 text-purple"></i>스마트 분석
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="./examples/only.jsp">
-              <i class="ni ni-chart-pie-35 text-purple"></i> 상품 분석
+            <a class="nav-link" href="./examples/only.jsp">
+              <i class="ni ni-chart-pie-35 text-purple"></i> 상품 분석 
             </a>
           </li>
-          <li class="nav-item ">
+          <li class="nav-item">
             <a class="nav-link " href="./examples/site_analysis.jsp">
               <i class="ni ni-diamond text-purple"></i> 사이트 분석
             </a>
           </li>
-          <!---
           <li class="nav-item">
-            <a class="nav-link " href="./examples/maps.html">
-              <i class="ni ni-pin-3 text-orange"></i> Maps
-            </a>
-          </li>-->
-          <li class="nav-item">
-            <a class="nav-link " href="./examples/profile.jsp">
-              <i class="ni ni-single-02 text-yellow"></i> 프로필
+            <a class="nav-link" href="./examples/tables.jsp">
+              <i class="ni ni-bullet-list-67 text-purple"></i> 게시판
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link " href="./examples/tables.jsp">
-              <i class="ni ni-bullet-list-67 text-red"></i> 게시판
-            </a>
-          </li>
+        </ul>
+        <!-- Divider -->
+        <hr class="my-3">
+        <!-- Heading -->
+        <h6 class="navbar-heading text-muted">회원</h6>
+        <!-- Navigation -->
+        <ul class="navbar-nav mb-md-3">
           <nav>
           <%if(user != null) {%>
           <li class="nav-item">
@@ -165,9 +160,7 @@
           </li>
           <%} %>
           </nav>
-        </ul>
-
-        
+        </ul> 
       </div>
     </div>
   </nav>
