@@ -1,7 +1,7 @@
 <%@page import="user.UserDAO"%>
 <%@page import="user.UserDTO"%>
 <%@page import="java.util.ArrayList"%>
-<%@ page language="java" contentType="text/html; charset=EUC-KR" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!--  세션에 저장된 정보를 접근 -->
 <% UserDTO user = (UserDTO)session.getAttribute("login");%>
 <!DOCTYPE html>
@@ -31,8 +31,8 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <!-- Brand -->
-      <a class="navbar-brand pt-0" href="./index.html">
-        <img src="./assets/img/brand/luxurysdf.png" class="navbar-brand-img" alt="...">
+      <a class="navbar-brand pt-0" href="./index.jsp">
+        <img src="./assets/img/brand/luxurysdf.PNG" class="navbar-brand-img" alt="...">
       </a>
       <!-- User -->
       <ul class="nav align-items-center d-md-none">
@@ -60,19 +60,19 @@
             <div class=" dropdown-header noti-title">
               <h6 class="text-overflow m-0">Welcome!</h6>
             </div>
-            <a href="./examples/profile.html" class="dropdown-item">
+            <a href="./examples/profile.jsp" class="dropdown-item">
               <i class="ni ni-single-02"></i>
               <span>My profile</span>
             </a>
-            <a href="./examples/profile.html" class="dropdown-item">
+            <a href="./examples/profile.jsp" class="dropdown-item">
               <i class="ni ni-settings-gear-65"></i>
               <span>Settings</span>
             </a>
-            <a href="./examples/profile.html" class="dropdown-item">
+            <a href="./examples/profile.jsp" class="dropdown-item">
               <i class="ni ni-calendar-grid-58"></i>
               <span>Activity</span>
             </a>
-            <a href="./examples/profile.html" class="dropdown-item">
+            <a href="./examples/profile.jsp" class="dropdown-item">
               <i class="ni ni-support-16"></i>
               <span>Support</span>
             </a>
@@ -90,8 +90,8 @@
         <div class="navbar-collapse-header d-md-none">
           <div class="row">
             <div class="col-6 collapse-brand">
-              <a href="./index.html">
-                <img src="./assets/img/brand/blue.png">
+              <a href="./index.jsp">
+                <img src="./assets/img/brand/luxurysdf.png">
               </a>
             </div>
             <div class="col-6 collapse-close">
